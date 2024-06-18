@@ -8,3 +8,6 @@ Content-Type: application/json
 }
 
 ###
+
+# @name get-poll
+GET http://localhost:3333/polls/942bf90e-5a4a-41e0-bf2c-c4ae1a184560

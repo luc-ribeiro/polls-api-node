@@ -28,6 +28,9 @@ devDependencies:
   '@types/node':
     specifier: ^20.11.16
     version: 20.14.4
+  '@types/ws':
+    specifier: ^8.5.10
+    version: 8.5.10
   prisma:
     specifier: ^5.9.1
     version: 5.15.0
@@ -337,6 +340,12 @@ packages:
     resolution: {integrity: sha512-1ChboN+57suCT2t/f8lwtPY/k3qTpuD/qnqQuYoBg6OQOcPyaw7PiZVdGpaZYAvhDDtqrt0oAaM8+oSu1xsUGw==}
     dependencies:
       undici-types: 5.26.5
+    dev: true
+
+  /@types/ws@8.5.10:
+    resolution: {integrity: sha512-vmQSUcfalpIq0R9q7uTo2lXs6eGIpt9wtnLdMv9LVpIjCA/+ufZRozlVoVelIYixx1ugCBKDhn89vnsEGOCx9A==}
+    dependencies:
+      '@types/node': 20.14.4
     dev: true
 
   /abort-controller@3.0.0:

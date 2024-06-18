@@ -1,18 +1,21 @@
-version: '3.7'
+version: '3.8'
 
 services:
   postgres:
-    image: bitnami/postgresql:latest
+    container_name: polls-pg
+    image: postgres
     ports:
-      - '5432:5432'
+      - 5434:5434
     environment:
-      - POSTGRES_USER=docker
-      - POSTGRES_PASSWORD=docker
-      - POSTGRES_DB=polls
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: docker
+      POSTGRES_DB: polls
+      PGPORT: 5434
     volumes:
       - polls_pg_data:/bitnami/postgresql
 
   redis:
+    container_name: polls-cache
     image: bitnami/redis:latest
     environment:
       - ALLOW_EMPTY_PASSWORD=yes

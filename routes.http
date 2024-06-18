@@ -3,7 +3,8 @@ POST http://localhost:3333/polls
 Content-Type: application/json
 
 {
-  "title": "Test"
+  "title": "Qual é o melhor framework Node.js?",
+  "options": ["Express", "Fastify", "Nest.js"]
 }
 
 ###
